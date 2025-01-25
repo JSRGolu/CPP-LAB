@@ -10,7 +10,7 @@
 //      * Set the sf::Texture variable as the texture of the sf::Sprite member (using the sf::Sprite::setTexture(sf::Texture) function).
 
 Game::Game()
-	: windowApp("Game Window", sf::Vector2u(800, 600)), mushroomMovement(4.0f, 4.0f)
+	: windowApp("Game Window", sf::Vector2u(800, 600)), mushroomMovement(0.25f, 0.25f)
 {
 	if (!mushroomTexture.loadFromFile("mushroom50-50.png"))
 		throw std::runtime_error("Failed to load texture!!");
