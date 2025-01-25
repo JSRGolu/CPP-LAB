@@ -14,13 +14,20 @@
 int main()
 {
     //Declare an object of type "Game"
-
+    Game game;
 
     // Simple game loop. Iterate _while_ the window of the game is not "done". Note getWindow() returns a pointer!
     // Three steps per iteration:
     //   1. Ask the game instance to handle the input.
     //   2. Ask the game instance to update its state.
     //   3. Ask the game instance to render.
+
+    while (!game.getWindow()->isWindowDone())
+    {
+        game.handleInputs();
+        game.update();
+        game.render();
+    }
 
     return 0;
 }
