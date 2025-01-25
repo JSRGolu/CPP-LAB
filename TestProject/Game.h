@@ -29,10 +29,10 @@ private:
 	void movement();
 
 	// Declare a member variable of type Window for the window of the application. Note this is NOT a pointer to a Window object.
-	Window windowApp();
+	Window windowApp;
 
 	// Declare a member variable of type Vector2f, that will indicate the movement of the mushroom per frame. Again, not a pointer.
-	Vector2f movementPF();
+	Vector2f mushroomMovement;
 
 	// Declare two member variables of types sf::Texture and sf::Sprite. The first one will hold the texture of the mushroom, while the
 	// second will be the sprite to draw in the window. These are variables, not pointers.

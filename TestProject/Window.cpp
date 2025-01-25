@@ -1,7 +1,7 @@
 #include "Window.h"
 
 Window::Window() // : <FILL THIS INITIALIZATION LIST with default values for isDone and isFullScreen>
-	: isDone{ false }, isFullscreen{ false } 
+	: isDone(false), isFullscreen(false)
 { 
 	// Initialize the window calling the setup() method with a title and a size.
 	// Pick a title of your choice. A recommended size is a sf::Vector2u(640, 480)
@@ -9,7 +9,7 @@ Window::Window() // : <FILL THIS INITIALIZATION LIST with default values for isD
 }
 
 Window::Window(const std::string& title, const sf::Vector2u& size) // : <FILL THIS INITIALIZATION LIST with default values for isDone and isFullScreen>	
-	: isDone{ false }, isFullscreen{ false }, windowTitle{ title }, windowSize{ size }
+	: isDone(false), isFullscreen(false), windowTitle(title), windowSize(size)
 {
 	// Redirect the call to the setup() function with the title and the size.
 	Window::setup(title, size);
